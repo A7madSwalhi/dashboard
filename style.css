@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background-color: var(--bgcolor);
+}
+
+:root {
+    --darkgreen: #11c15b;
+    --lightgreen: #32ed80;
+    --darkblue: #448aff;
+    --lightblue: #91baff;
+    --red: #ff5252;
+    --yellow: #ffe100;
+    --bgcolor: #eef4f6;
+    --spancolo: #898d95;
+}
+
+header {
+    background-color: var(--darkblue);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15px;
+    color: white;
+    padding: 10px 0;
+}
+
+.fa-arrow-turn-down,
+.fa-arrow-down {
+    color: var(--red);
+}
+
+.fa-arrow-turn-up,
+.fa-arrow-up {
+    color: var(--darkgreen);
+}
+
+.container a {
+    color: white;
+}
+.prof {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.pers {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.pers img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.cont {
+    margin: 23px;
+}
+
+.ad {
+    display: flex;
+    gap: 2%;
+}
+
+.sec {
+    width: calc(98% / 3);
+}
+
+.inou {
+    display: flex;
+
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    gap: 1px;
+}
+.inou .in-u {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: calc(99% / 2);
+    padding: 25px;
+    gap: 2px;
+}
+
+.in-u i {
+    font-size: 28px;
+}
+
+.in-u h4 {
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
+}
+
+.in-u span {
+    font-size: 0.75em;
+    color: var(--spancolo);
+}
+.in-u > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.in-u .fa-user {
+    color: var(--darkblue);
+}
+
+.in-u .fa-envelope-open {
+    color: var(--darkblue);
+}
+
+.in-u .fa-volume-low {
+    color: var(--darkgreen);
+}
+
+.in-u .fa-file-lines {
+    color: var(--red);
+}
+
+.tw .fa-wifi {
+    color: var(--darkblue);
+}
+.tw .fa-share-nodes {
+    color: var(--darkblue);
+}
+.tw .fa-signal {
+    color: var(--red);
+}
+.tw .fa-network-wired {
+    color: var(--darkgreen);
+}
+
+.ach {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20%;
+    color: white;
+}
+
+.ach > div {
+    width: 100%;
+    background-color: white;
+    height: calc(80% / 2);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-radius: 4px;
+    gap: 2%;
+}
+
+.icon {
+    width: 25%;
+    height: 100%;
+    background-color: var(--darkgreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px 0 0 4px;
+    font-size: 1.5em;
+}
+
+.nn > h4 {
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
+}
+
+.nn > span {
+    font-size: 0.75em;
+}
+
+.sec .star {
+    background-color: var(--lightgreen);
+}
+
+.sec .cup {
+    background-color: var(--lightblue);
+}
+
+.cup .icon {
+    background-color: var(--darkblue);
+}
+
+.perf .cont {
+    display: flex;
+}
+
+.st {
+    width: 50%;
+}
+
+.memper {
+    background-color: white;
+    border-radius: 4px;
+}
+
+.memper .header {
+    padding: 0.8em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--spancolo);
+}
+
+.memper .header i {
+    font-size: 0.8em;
+}
+
+.header h4 {
+    font-size: 0.9em;
+
+    position: relative;
+}
+
+.header h4::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    border-left: 4px solid var(--darkblue);
+    left: -16px;
+}
+
+.peop {
+    display: flex;
+    flex-direction: column;
+}
+
+.oero {
+    padding: 0.8em 1em;
+    border-bottom: 1px solid var(--spancolo);
+}
+.pers {
+    justify-content: space-between;
+}
+
+.pepper {
+    display: flex;
+    align-items: center;
+    column-gap: 0.8em;
+}
+
+.pepper h4 {
+    font-size: 0.7em;
+}
+
+.pepper span {
+    font-size: 0.67em;
+    color: var(--spancolo);
+}
+
+.dir {
+    display: flex;
+    font-size: 0.8em;
+    column-gap: 0.5em;
+}
+
+.stper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.strr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(95% / 2);
+    background-color: white;
+    row-gap: 0.5em;
+    border-radius: 4px;
+}
+
+.tc {
+    background-color: var(--red);
+    color: white;
+
+    align-items: center;
+    padding: 0 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.tc h4,
+.is h4 {
+    margin-bottom: 0.5em;
+}
+
+.is {
+    background-color: var(--darkgreen);
+    color: white;
+    align-items: center;
+    padding: 0 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.strr.tc span,
+.strr.is span {
+    color: white;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+.strr.tc p,
+.strr.is p {
+    font-size: 0.7em;
+}
+.t1 {
+    display: flex;
+    column-gap: 1em;
+}
+
+.strr > h4 {
+    font-size: 0.65em;
+}
+.strr span {
+    font-size: 0.6em;
+    color: var(--spancolo);
+}
+
+.rrr {
+    background-color: white;
+    display: flex;
+    column-gap: 1em;
+    padding: 0.8em 1em;
+    border-radius: 4px;
+}
+
+.rrr .ora {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.rrr .ora input {
+    width: 100%;
+    appearance: none;
+    outline: none;
+    background-color: #e9ecef;
+    height: 0.35em;
+    border-radius: 25px;
+}
+
+.ora input::range-thumb {
+    border: 4px solid var(--darkblue);
+    background-color: white;
+    appearance: none;
+}
+
+.rrr .ora input::-moz-range-progress {
+    height: 0.35em;
+    border-radius: 25px;
+    background: var(--darkblue);
+}
+
+.rrr .ora h4 {
+    margin-bottom: 0.5em;
+}
+
+.rrr .sppp {
+    font-size: 0.75em;
+}
